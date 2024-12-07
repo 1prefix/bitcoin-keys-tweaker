@@ -80,6 +80,10 @@ pub fn App() -> Html {
 
     html! {
         <div id="wrapper">
+            <nav>
+                <a href="https://github.com/1prefix/bitcoin-keys-tweaker" target="_blank">{"Github Repo"}</a>
+            </nav>
+
             <h1>{"Bitcoin Keys Tweaker"}</h1>
 
             <p>{"Please enter valid WIF (Wallet Import Format) secret keys."}</p>
