@@ -1,0 +1,28 @@
+button#action_button {
+    display: block;
+    border: none;
+    color: white;
+    background: black;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    text-align: center;
+
+    &:disabled {
+        background: #666;
+        color: white;
+    }
+
+    &:not(&:disabled) {
+        &:hover {
+            cursor: pointer;
+            background: #333;
+            color: white;
+        }
+
+        @media only screen and (max-width: 599px) {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

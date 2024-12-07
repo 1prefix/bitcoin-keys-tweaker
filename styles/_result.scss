@@ -1,0 +1,12 @@
+div#result {
+    h2 {
+        /* font-family: "Barrio", system-ui; */
+    }
+
+    p.result_key {
+        overflow-wrap: break-word;
+        border: 1px #666;
+        background: #eee;
+        padding: 1em;
+    }
+}

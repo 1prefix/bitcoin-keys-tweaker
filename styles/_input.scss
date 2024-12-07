@@ -1,0 +1,61 @@
+div.input_container {
+    position: relative;
+
+    input {
+        font-size: 1em;
+        line-height: 1em;
+        height: 2em;
+        padding: 0.5em 1.5em 0.5em 1em;
+        margin: 0;
+        border: 1px solid #000;
+        background: transparent;
+        font-weight: 400;
+        width: 100%;
+        box-sizing: border-box;
+        letter-spacing: normal;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    div.clear_input {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        line-height: 1em;
+        padding: 0.5em;
+        color: #666;
+
+        &:hover {
+            cursor: pointer;
+            color: #ddd;
+        }
+    }
+}
+
+div.input_notification_container {
+    display: block;
+    position: relative;
+    padding: 0.5em 0;
+
+    div.message {
+        position: absolute;
+        top: 0.5em;
+        left: 1em;
+        color: #fff;
+        font-size: 0.5em;
+        padding: 0.25em;
+
+        &.success {
+            background: #43a047;
+        }
+
+        &.error {
+            background: #ef5350;
+        }
+    }
+}
